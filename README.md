@@ -4,7 +4,7 @@
 
 ```bash
 # Add this tap
-brew tap <your-username>/reader-cli
+brew tap lvguangzeng/reader-cli
 
 # Install reader-cli
 brew install reader-cli
