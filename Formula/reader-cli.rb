@@ -8,8 +8,7 @@ class ReaderCli < Formula
   depends_on "rust" => :build
 
   def install
-    # 项目在主目录的 reader-cli 子目录
-    cd "reader-cli-main/reader-cli" do
+    cd "reader-cli-main" do
       system "cargo", "install", *std_cargo_args
     end
   end
