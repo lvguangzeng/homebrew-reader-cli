@@ -1,15 +1,16 @@
 class ReaderCli < Formula
   desc "命令行 txt 小说阅读器 - 支持编码自适应、章节跳转、进度记忆"
   homepage "https://github.com/lvguangzeng/reader-cli"
-  license "MIT"
+  url "https://github.com/lvguangzeng/reader-cli/archive/refs/heads/main.tar.gz"
+  sha256 :no_check
   version "0.1.0"
+  license "MIT"
 
   depends_on "rust" => :build
 
   def install
-    # 使用本地项目路径
-    project_path = File.expand_path("../../reader-cli", __dir__)
-    cd project_path do
+    # 项目在主目录的 reader-cli 子目录
+    cd "reader-cli-main/reader-cli" do
       system "cargo", "install", *std_cargo_args
     end
   end
