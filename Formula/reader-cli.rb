@@ -1,8 +1,7 @@
 class ReaderCli < Formula
   desc "命令行 txt 小说阅读器 - 支持编码自适应、章节跳转、进度记忆"
   homepage "https://github.com/reader/reader-cli"
-  url "https://github.com/reader/reader-cli/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "no-check"
+  url "file:///Users/lvguangzeng/Workspace/project/reader-cli/reader-cli"
   version "0.1.0"
   license "MIT"
 
