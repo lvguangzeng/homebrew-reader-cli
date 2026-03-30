@@ -2,7 +2,7 @@ class ReaderCli < Formula
   desc "命令行 txt 小说阅读器 - 支持编码自适应、章节跳转、进度记忆"
   homepage "https://github.com/lvguangzeng/reader-cli"
   url "https://github.com/lvguangzeng/reader-cli.git", :branch => "main"
-  version "0.4.2"
+  version "0.4.3"
   license "MIT"
 
   depends_on "rust" => :build
